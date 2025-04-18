@@ -1229,13 +1229,6 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers]
 "DisableAutoplay"=dword:00000000
 
-; enhance pointer precision
-[HKEY_CURRENT_USER\Control Panel\Mouse]
-"MouseSpeed"="1"
-"MouseThreshold1"="6"
-"MouseThreshold2"="10"
-
-
 ; device installation settings
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata]
 "PreventDeviceMetadataFromNetwork"=dword:00000000
