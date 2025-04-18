@@ -258,28 +258,6 @@ Windows Registry Editor Version 5.00
 "MouseThreshold1"="0"
 "MouseThreshold2"="0"
 
-; mouse pointers scheme none
-[HKEY_CURRENT_USER\Control Panel\Cursors]
-"AppStarting"=hex(2):00,00
-"Arrow"=hex(2):00,00
-"ContactVisualization"=dword:00000000
-"Crosshair"=hex(2):00,00
-"GestureVisualization"=dword:00000000
-"Hand"=hex(2):00,00
-"Help"=hex(2):00,00
-"IBeam"=hex(2):00,00
-"No"=hex(2):00,00
-"NWPen"=hex(2):00,00
-"Scheme Source"=dword:00000000
-"SizeAll"=hex(2):00,00
-"SizeNESW"=hex(2):00,00
-"SizeNS"=hex(2):00,00
-"SizeNWSE"=hex(2):00,00
-"SizeWE"=hex(2):00,00
-"UpArrow"=hex(2):00,00
-"Wait"=hex(2):00,00
-@=""
-
 ; disable device installation settings
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata]
 "PreventDeviceMetadataFromNetwork"=dword:00000001
@@ -1272,70 +1250,6 @@ Windows Registry Editor Version 5.00
 
 
 
-
-; SYSTEM AND SECURITY
-; set appearance options
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects]
-"VisualFXSetting"=-
-
-; animate controls and elements inside windows
-; fade or slide menus into view
-; fade or slide tooltips into view
-; fade out menu items after clicking
-; show shadows under mouse pointer
-; show shadows under windows
-; slide open combo boxes
-; smooth-scroll list boxes
-[HKEY_CURRENT_USER\Control Panel\Desktop]
-"UserPreferencesMask"=hex(2):9e,1e,07,80,12,00,00,00
-
-; animate windows when minimizing and maximizing
-[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
-"MinAnimate"="1"
-
-; animations in the taskbar
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"TaskbarAnimations"=dword:1
-
-; enable peek
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM]
-"EnableAeroPeek"=dword:1
-
-; save taskbar thumbnail previews
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM]
-"AlwaysHibernateThumbnails"=dword:0
-
-; disable show thumbnails instead of icons
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"IconsOnly"=dword:0
-
-; show translucent selection rectangle
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"ListviewAlphaSelect"=dword:1
-
-; show window contents while dragging
-[HKEY_CURRENT_USER\Control Panel\Desktop]
-"DragFullWindows"="1"
-
-; smooth edges of screen fonts
-[HKEY_CURRENT_USER\Control Panel\Desktop]
-"FontSmoothing"="2"
-
-; use drop shadows for icon labels on the desktop
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"ListviewShadow"=dword:1
-
-; adjust for best performance of
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
-"Win32PrioritySeparation"=dword:00000002
-
-; remote assistance
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Remote Assistance]
-"fAllowToGetHelp"=dword:00000001
-
-
-
-
 ; TROUBLESHOOTING
 ; automatic maintenance
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\Maintenance]
@@ -1776,14 +1690,6 @@ Windows Registry Editor Version 5.00
 
 
 ; SYSTEM
-; dpi scaling
-[HKEY_CURRENT_USER\Control Panel\Desktop]
-"LogPixels"=-
-"Win8DpiScaling"=dword:00000000
-
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\DWM]
-"UseDpiScaling"=-
-
 ; fix scaling for apps
 [HKEY_CURRENT_USER\Control Panel\Desktop]
 "EnablePerProcessSystemDPI"=-
@@ -1791,10 +1697,6 @@ Windows Registry Editor Version 5.00
 ; hardware accelerated gpu scheduling
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
 "HwSchMode"=-
-
-; variable refresh rate & optimizations for windowed games
-[HKEY_CURRENT_USER\Software\Microsoft\DirectX\UserGpuPreferences]
-"DirectXUserGlobalSettings"=-
 
 ; notifications
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PushNotifications]
@@ -1901,45 +1803,6 @@ Windows Registry Editor Version 5.00
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore]
 
 
-
-
-; EDGE
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MicrosoftEdgeElevationService]
-"Start"=dword:00000002
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\edgeupdate]
-"Start"=dword:00000002
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\edgeupdatem]
-"Start"=dword:00000002
-
-
-
-
-; CHROME
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome]
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\GoogleChromeElevationService]
-"Start"=dword:00000002
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\gupdate]
-"Start"=dword:00000002
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\gupdatem]
-"Start"=dword:00000002
-
-
-
-
-; NVIDIA
-; nvidia tray icon
-[-HKEY_CURRENT_USER\Software\NVIDIA Corporation\NvTray]
-
-
-
-
 ; --CAN'T DO NATIVELY--
 
 
@@ -1968,14 +1831,6 @@ Windows Registry Editor Version 5.00
 ; widgets
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\NewsAndInterests\AllowNewsAndInterests]
 "value"=dword:00000001
-
-
-
-
-; NVIDIA
-; old nvidia sharpening
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm\FTS]
-"EnableGR535"=dword:00000001
 
 
 
