@@ -271,20 +271,10 @@ Windows Registry Editor Version 5.00
 "EnableControl"=dword:00000000
 
 
-
-
-; SYSTEM AND SECURITY
-; set appearance options to custom
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects]
-"VisualFXSetting"=dword:3
-
-
 ; TROUBLESHOOTING
 ; disable automatic maintenance
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\Maintenance]
 "MaintenanceDisabled"=dword:00000001
-
-
 
 
 ; SECURITY AND MAINTENANCE
@@ -293,18 +283,13 @@ Windows Registry Editor Version 5.00
 "Disabled"=dword:00000001
 
 
-
-
 ; --IMMERSIVE CONTROL PANEL--
-
-
 
 
 ; WINDOWS UPDATE
 ; disable delivery optimization
 [HKEY_USERS\S-1-5-20\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Settings]
 "DownloadMode"=dword:00000000
-
 
 
 
@@ -594,12 +579,6 @@ Windows Registry Editor Version 5.00
 
 
 ; PERSONALIZATION
-; solid color personalize your background
-[HKEY_CURRENT_USER\Control Panel\Desktop]
-"Wallpaper"=""
-
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Wallpapers]
-"BackgroundType"=dword:00000001
 
 ; dark theme 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize]
@@ -687,10 +666,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Feeds]
 "EnableFeeds"=dword:00000000
 
-; show all taskbar icons
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
-"EnableAutoTray"=dword:00000000
-
 ; remove security taskbar icon
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run]
 "SecurityHealth"=hex(3):07,00,00,00,05,DB,8A,69,8A,49,D9,01
@@ -731,10 +706,6 @@ Windows Registry Editor Version 5.00
 
 
 ; SYSTEM
-
-; disable fix scaling for apps
-[HKEY_CURRENT_USER\Control Panel\Desktop]
-"EnablePerProcessSystemDPI"=dword:00000000
 
 ; turn on hardware accelerated gpu scheduling
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
@@ -1538,21 +1509,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Appx]
 "AllowAutomaticAppArchiving"=-
 
-
-
-
-; PERSONALIZATION
-; picture personalize your background
-[HKEY_CURRENT_USER\Control Panel\Desktop]
-"WallPaper"="C:\\Windows\\web\\wallpaper\\Windows\\img0.jpg"
-
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Wallpapers]
-"BackgroundHistoryPath0"="C:\\Windows\\web\\wallpaper\\Windows\\img0.jpg"
-"CurrentWallpaperPath"="C:\\Windows\\web\\wallpaper\\Windows\\img0.jpg"
-
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Wallpapers]
-"BackgroundType"=dword:00000000
-
 ; light theme 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize]
 "AppsUseLightTheme"=dword:00000001
@@ -1683,9 +1639,6 @@ Windows Registry Editor Version 5.00
 
 
 ; SYSTEM
-; fix scaling for apps
-[HKEY_CURRENT_USER\Control Panel\Desktop]
-"EnablePerProcessSystemDPI"=-
 
 ; hardware accelerated gpu scheduling
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
@@ -1783,23 +1736,9 @@ Windows Registry Editor Version 5.00
 "RomeSdkChannelUserAuthzPolicy"=dword:00000001
 "CdpSessionUserAuthzPolicy"=-
 
-
-
-
-; --OTHER--
-
-
-
-
 ; STORE
 ; update apps automatically
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore]
-
-
-; --CAN'T DO NATIVELY--
-
-
-
 
 ; UWP APPS
 ; background apps
